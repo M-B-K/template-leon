@@ -41,6 +41,36 @@ body{
     }
 }
 
+.head{
+    text-align: center;
+}
+
+.head h2{
+    color: var(--second-color);
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.head p{
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+@media (max-width: 375px){
+    .head h2{
+        font-size: 5rem;
+    }
+
+    .head p{
+        font-size: 1rem;
+    }
+}
+
 .home{
     position: fixed;
     bottom: 50px;
@@ -215,26 +245,6 @@ body{
     padding-bottom: 60px;
 }
 
-.head{
-    text-align: center;
-}
-
-.head h2{
-    color: var(--second-color);
-    font-size: 100px;
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: -3px;
-    margin: 0;
-}
-
-.head p{
-    margin: -30px 0 0;
-    font-size: 20px;
-    text-align: center;
-    color: #797979;
-}
-
 .services .content{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -329,10 +339,6 @@ line-height: 1.6;
 .portfolio .content .col img{
     max-width: 100%;
 }
-
-/* .portfolio .content .col:hover img {
-    transform: rotate(3deg) scale(1.1);
-} */
 
 .portfolio .content .col .txt{
     padding: 20px;
@@ -462,6 +468,12 @@ line-height: 1.6;
     font-weight: 800;
     color: var(--main-color);
     text-decoration: none;
+}
+
+@media (max-width: 375px){
+    .contact .txt .link{
+        font-size: 1.5rem;
+    }
 }
 
 .contact .txt .social{
